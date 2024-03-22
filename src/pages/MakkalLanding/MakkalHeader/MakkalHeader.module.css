@@ -1,0 +1,64 @@
+.background {
+  background: #00000052;
+}
+
+.navbar {
+  height: 50px;
+}
+
+.dropdown > a:first-child {
+  color: var(--white);
+  padding: 0;
+}
+.dropdown a:first-child::after {
+  margin-left: 0.255em;
+  position: absolute;
+  content: "";
+  top: 14px;
+}
+.rightHeader {
+  gap: 30px;
+}
+.loginWrapper {
+  background-color: var(--white);
+  color: #000;
+  transition: all 0.2s ease;
+  padding: 1px 8px;
+  border-radius: 4px;
+}
+.loginWrapper:hover {
+}
+html {
+  scroll-behavior: smooth;
+}
+.navItem{
+  color:white !important;
+  font-weight: normal;
+  font-family: var(--primary-font);
+}
+@media screen and (max-width: 1024px) {
+  .rightHeader {
+    gap: 20px;
+  }
+  .logo {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .rightHeader {
+    gap: 12px;
+    font-size: 14px;
+  }
+  .logo {
+    width: 35px;
+    height: 35px;
+  }
+  .loginWrapper {
+    font-size: 12px;
+  }
+  .navbar {
+    height: 30px;
+  }
+}

@@ -1,0 +1,28 @@
+.wrapper {
+  background-color: var(--footer);
+  font-size: 18px;
+}
+.wrapper > div {
+  border-bottom: 1px solid var(--white);
+  padding-block: 24px;
+}
+.icon:hover svg path {
+  fill: var(--primary);
+}
+
+@media screen and (max-width: 1400px) {
+  .wrapper {
+    font-size: 16px;
+  }
+  .wrapper > div {
+    padding-block: 16px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .wrapper {
+    font-size: 14px;
+  }
+  .wrapper > div {
+    padding-block: 12px;
+  }
+}

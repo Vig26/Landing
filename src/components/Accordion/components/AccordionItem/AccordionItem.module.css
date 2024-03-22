@@ -1,0 +1,86 @@
+.accordionItem {
+  border: 1px solid #8da5ba80;
+  border-radius: 5px;
+  box-shadow: 0px 3px 6px #004fac1a;
+  margin-bottom: 24px;
+}
+
+.button {
+  font-size: 16px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 15px;
+  border-radius: 5px 5px 0 0;
+  text-align: left;
+}
+
+.icon {
+  width: 16px;
+  height: 16px;
+  display: flex;
+}
+.accordionItem.active .button .icon svg,
+.button,
+.icon,
+.accordionItem {
+  transition: all ease 0.2s;
+}
+
+.answer {
+  background-color: #fff;
+  padding: 20px 15px 0;
+}
+.accordionItem.active {
+  border: 1px solid var(--primary);
+}
+.accordionItem.active .button {
+  background-color: var(--primary);
+  color: var(--white);
+}
+.answerWrapper {
+  height: 0;
+  overflow: hidden;
+  transition: height ease 0.2s;
+  border-radius: 5px;
+  margin-top: -4px;
+}
+.accordionItem.active .button .icon {
+  transform: rotate(-180deg);
+}
+.accordionItem.active .button .icon svg {
+  fill: #fff;
+}
+.answer label {
+  font-size: 14px;
+}
+.answer p,
+.answer a,
+.button p {
+  font-weight: 600;
+  line-height: 1.6;
+}
+.answer .underLine {
+  text-decoration: underline;
+}
+.answer .btn {
+  border-radius: 5px;
+  padding: 8px 10px;
+  font-size: 14px;
+  background-color: var(--primary);
+  color: var(--white);
+}
+.ListWrapper {
+  list-style-type: decimal;
+  padding-left: 18px;
+}
+.ListWrapper li {
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 767px) {
+  .ListWrapper li {
+    font-size: 14px;
+  }
+}

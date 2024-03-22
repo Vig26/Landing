@@ -1,0 +1,47 @@
+.contactInfoWrapper {
+  gap: 15px;
+}
+.iconWrapper img {
+  width: 100%;
+}
+.info {
+  color: var(--black);
+  font-weight: 500;
+}
+.info > p {
+  margin-bottom: 0px;
+}
+.info p:not(.labelName) {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1;
+}
+@media screen and (max-width: 1600px) {
+  .iconWrapper svg {
+    width: 35px;
+    height: 35px;
+  }
+  .info p:not(.labelName) {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .iconWrapper svg {
+    width: 30px;
+    height: 30px;
+  }
+  .info > p,
+  .info p:not(.labelName) {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .info {
+    display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .iconWrapper {
+    width: 25px;
+  }
+}

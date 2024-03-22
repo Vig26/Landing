@@ -1,0 +1,67 @@
+.wrapper {
+  background-image: url("../../assets/images/banner-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-block: 60px;
+  flex: 0 1 auto;
+}
+.title h1 {
+  font-size: 46px;
+  font-weight: 600;
+}
+.title h3 {
+  font-size: 26px;
+  font-weight: 600;
+}
+.backBtn {
+  box-shadow: 0px 3px 6px #004fac43;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  color: var(--primary);
+  font-family: var(--primary-font);
+  padding: 11px 30px;
+  position: relative;
+}
+@media screen and (max-width: 1600px) {
+  .wrapper {
+    padding-block: 40px;
+  }
+  .title h1 {
+    font-size: 30px;
+  }
+  .title h3 {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .title h1 {
+    font-size: 24px;
+  }
+  .title h3 {
+    font-size: 30px;
+  }
+  .wrapper {
+    padding-block: 20px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .title h1 {
+    font-size: 20px;
+  }
+  .title h3 {
+    font-size: 16px;
+  }
+  .iconBox {
+    transform: scale(0.9);
+  }
+}
+@media screen and (max-width: 767px) {
+  .wrapper {
+    padding-block: 10px;
+  }
+  .title h1 {
+    font-size: 18px;
+  }
+  .iconBox {
+    transform: scale(0.8);
+  }
+}

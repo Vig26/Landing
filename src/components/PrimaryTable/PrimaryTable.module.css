@@ -1,0 +1,17 @@
+.tableWrapper {
+  overflow-x: auto;
+}
+.tableWrapper table {
+  border-collapse: separate;
+  border-spacing: 0 24px;
+}
+@media screen and (max-width: 1600px) {
+  .tableWrapper table {
+    border-spacing: 0 20px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .tableWrapper table {
+    border-spacing: 0 16px;
+  }
+}

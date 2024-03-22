@@ -1,0 +1,17 @@
+.wrapper > p:first-child {
+  font-size: 18px;
+}
+@media screen and (max-width: 1400px) {
+  .wrapper > p:first-child {
+    font-size: 18px;
+  }
+  .wrapper > p:last-child {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .wrapper > p:first-child {
+    font-size: 16px;
+  }
+}

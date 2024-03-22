@@ -1,0 +1,53 @@
+.wrapper {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-family: var(--secondary-font);
+  background: url("../../../../assets/images/banner-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+}
+.helper {
+  top: 5px;
+  left: 15px;
+  right: 15px;
+  word-break: break-all;
+}
+.headingWelcome {
+  font-size: 50px;
+  font-family: var(--primary-font);
+  font-weight: 600;
+}
+@media screen and (max-width: 1600px) {
+  .headingWelcome {
+    font-size: 36px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .wrapper {
+    padding-block: 24px;
+  }
+  .headingWelcome {
+    font-size: 28px;
+  }
+  .helper {
+    top: 0px;
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .headingWelcome {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .headingWelcome {
+    font-size: 20px;
+  }
+  .wrapper {
+    padding-block: 16px;
+  }
+}

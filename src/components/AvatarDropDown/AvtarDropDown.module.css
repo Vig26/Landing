@@ -1,0 +1,42 @@
+.btn {
+  color: var(--white);
+  background-color: var(--primary);
+  border-radius: 40px;
+  width: 40px;
+  height: 40px;
+  letter-spacing: 1px;
+  padding: 0;
+  overflow: hidden;
+}
+.btn::after {
+  display: none;
+}
+.btn:hover {
+  color: var(--white);
+}
+.dropDownItem {
+  color: var(--black);
+}
+
+@media screen and (max-width: 1600px) {
+  .btn {
+    width: 35px;
+    height: 35px;
+  }
+  .logo {
+    width: 35px;
+    height: 35px;
+  }
+}
+@media screen and (max-width: 1400x) {
+  .logo {
+    width: 30px;
+    height: 30px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .logo {
+    width: 25px;
+    height: 25px;
+  }
+}

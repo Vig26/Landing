@@ -1,0 +1,88 @@
+.logo {
+  margin-right: 30px;
+  font-weight: 700;
+  font-size: 16px;
+  font-family: "Avenir Next";
+}
+
+.logoRight {
+  object-fit: contain;
+  margin-left: 40px;
+}
+
+.navbar-brand {
+  display: inline-flex !important;
+  align-items: center;
+}
+
+.navbar-brand > img {
+  padding: 7px 14px;
+}
+
+.background {
+  background: #17788d;
+}
+
+.wrapper {
+  padding-top: 50px;
+  display: flex;
+  flex-flow: column;
+  flex: 1 1 auto;
+  background: linear-gradient(90deg, #67b26f -39.64%, #4ca2cd 105.25%);
+}
+
+.text {
+  font-family: "Avenir Next";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: #fff !important;
+}
+
+.newsUpdate {
+  /* padding-top: 50px; */
+  display: flex;
+  flex-flow: column;
+  flex: 1 1 auto;
+  background: #648cc8;
+}
+
+.helplayout {
+  /* padding-top: 50px; */
+  display: flex;
+  flex-flow: column;
+  flex: 1 1 auto;
+  background: #f9f9f9;
+}
+#nav-dropdown {
+  color: white !important;
+}
+
+a {
+  font-size: 12px;
+  font-weight: normal;
+  color: white;
+}
+.dropdown-menu.show {
+  background-color: cadetblue;
+}
+a:hover {
+  color: white;
+}
+
+@media screen and (max-width: 500px) {
+  .text {
+    font-size: 10px;
+    flex: auto;
+    margin-right: -26px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .text {
+    font-size: 10px;
+    flex: auto;
+    margin-right: -26px;
+  }
+}

@@ -1,0 +1,45 @@
+.btnWrapper {
+  background: #0f005e;
+  color: var(--white);
+  font-weight: bold;
+  height: 50px;
+  padding-inline: 14px;
+  box-shadow: 0px 3px 6px #004fac43;
+  transition: transform 0.2s ease;
+}
+.btnWrapper::before {
+  content: "";
+  border-color: transparent #0f005e transparent transparent;
+  border-style: solid;
+  border-width: 25px 25px 25px 0;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  transform: translate(-100%, 0px);
+  transition: transform 0.2s ease;
+}
+@media screen and (max-width: 1600px) {
+  .btnWrapper {
+    height: 44px;
+  }
+  .btnWrapper::before {
+    border-width: 22px 22px 22px 0;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .btnWrapper {
+    height: 40px;
+    font-size: 16px;
+  }
+  .btnWrapper::before {
+    border-width: 20px 20px 20px 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .btnWrapper {
+    height: 32px;
+  }
+  .btnWrapper::before {
+    border-width: 16px 16px 16px 0;
+  }
+}

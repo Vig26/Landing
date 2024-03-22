@@ -1,0 +1,85 @@
+/* Line Heights */
+.line-height-medium {
+  line-height: 1.5;
+}
+.line-height-normal {
+  line-height: 1.2;
+}
+.line-height-big {
+  line-height: 2;
+}
+/* Font-weights */
+.fw600 {
+  font-weight: 600;
+}
+
+/* Border-radius */
+.round4 {
+  border-radius: 4px;
+}
+.round10 {
+  border-radius: 10px;
+}
+/* Anchors */
+a {
+  cursor: pointer;
+}
+
+/* Buttons */
+/* Colors based */
+button {
+  transition: all 0.2s ease-in;
+}
+.primary-contained-btn {
+  background-color: var(--primary);
+  color: var(--white);
+  border: 1px solid var(--primary);
+}
+.primary-contained-btn:hover {
+  background-color: transparent;
+  color: var(--primary);
+}
+.primary-outlined-btn {
+  background-color: transparent;
+  color: var(--primary);
+  border: 1px solid var(--primary);
+}
+.primary-outlined-btn:hover {
+  background-color: var(--primary);
+  color: var(--white);
+}
+/* Size based */
+.small-btn {
+  padding: 3px 20px;
+  line-height: 1.5;
+  width: 90px;
+}
+.large-btn {
+  padding: 8px 20px;
+  line-height: 1.5;
+  min-width: 180px;
+}
+
+/* Custom Scrollbar */
+.custom-scroll-wrapper::-webkit-scrollbar {
+  width: 5px;
+}
+.custom-scroll-wrapper::-webkit-scrollbar-track {
+  background: transparent;
+}
+.custom-scroll-wrapper::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 15px;
+}
+
+@media screen and (max-width: 1400px) {
+  .large-btn {
+    padding: 6px 20px;
+    min-width: 140px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .large-btn {
+    min-width: 120px;
+  }
+}

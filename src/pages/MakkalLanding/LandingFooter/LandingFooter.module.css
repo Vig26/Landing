@@ -1,0 +1,121 @@
+.LandingFooterMain {
+  background: linear-gradient(
+    266deg,
+    #00b4db -71.25%,
+    rgba(236, 0, 140, 0.54) -31.22%,
+    #0083b0 89.44%
+  );
+  padding-top: 60px;
+  padding-bottom: 30px;
+  color: var(--white);
+}
+.LandingFooterMain h3 {
+  font-weight: 700;
+  font-size: 22px;
+}
+.LandingFooterMain p {
+  line-height: 22px;
+  font-weight: 500;
+  max-width: 620px;
+}
+.LandingFooterMain span {
+  font-size: 10px;
+  font-weight: 400;
+}
+.LandingFooterMain .quickLinksList {
+  column-count: 2;
+}
+.LandingFooterMain .quickLinksList .quickLink {
+  list-style-type: disc;
+  font-size: 16px;
+  padding-block: 10px;
+}
+.LandingFooterMain .quickLinksList .quickLink a {
+  color: var(--white);
+  position: relative;
+}
+.LandingFooterMain .quickLinksList .quickLink a::before {
+  position: absolute;
+  content: "";
+  bottom: -3px;
+  width: 0;
+  background-color: var(--white);
+  transition: all 0.3s ease;
+  height: 1px;
+  left: 50%;
+  opacity: 0.6;
+}
+.LandingFooterMain .quickLinksList .quickLink a:hover:before {
+  width: 100%;
+  left: 0;
+}
+.quickLinks h4 {
+  font-size: 22px;
+}
+.FooterIcons img {
+  height: 40px;
+}
+address {
+  font-size: 16px;
+  font-weight: 500;
+}
+address a {
+  color: var(--white);
+}
+.SocialFooter .SupportInfo a {
+  color: var(--white);
+}
+.SocialFooter .SupportInfo a > img {
+  padding-right: 10px;
+}
+.SocialFooter {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+@media screen and (max-width: 1400px) {
+  .LandingFooterMain {
+    padding-top: 20px;
+  }
+  .LandingFooterMain .quickLinksList li,
+  .LandingFooterMain address,
+  .LandingFooterMain p {
+    font-size: 14px;
+  }
+  .LandingFooterMain h3,
+  .quickLinks h4 {
+    font-size: 18px;
+  }
+  .quickLinks {
+    margin-bottom: 14px;
+    margin-top: 14px;
+  }
+  .quickLinks .quickLinksList {
+    padding-left: 10px;
+  }
+  .quickLinks .quickLinksList .quickLink {
+    padding-block: 6px;
+  }
+  .socialLinks {
+    display: flex;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .SupportInfo {
+    flex: 1 1 auto;
+  }
+  .SupportInfo a {
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .SocialFooter {
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+  .SocialFooter a {
+    display: block;
+  }
+}

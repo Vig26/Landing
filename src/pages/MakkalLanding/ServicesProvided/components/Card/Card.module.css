@@ -1,0 +1,67 @@
+.cardBox {
+  box-shadow: -1px 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  padding: 25px 20px;
+  transition: all 0.2s ease-in;
+  min-height: 240px;
+  display: block;
+}
+.cardBoxBeneficiary {
+  box-shadow: -1px 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  padding: 25px 20px;
+  transition: all 0.2s ease-in;
+  min-height: auto;
+  display: block;
+}
+.cardBoxBeneficiary:hover,
+.cardBoxBeneficiary:active {
+  transform: scale(1.03);
+  box-shadow: -1px 4px 4px rgba(0, 0, 0, 0.1);
+}
+.cardBox:hover,
+.cardBox:active {
+  transform: scale(1.03);
+  box-shadow: -1px 4px 4px rgba(0, 0, 0, 0.1);
+}
+.cardTitle {
+  color: #2578c3;
+}
+.cardDesc {
+  color: #aaaaaa;
+}
+@media screen and (max-width: 1400px) {
+  .cardTitle,
+  .cardDesc {
+    line-height: 1.5;
+  }
+  .cardBox {
+  }
+  .cardBoxVisible{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 4000px) {
+  .cardBox {
+    min-height: auto;
+  }
+  .cardBox {
+    padding: 16px;
+  }
+  .cardTitle,
+  .cardDesc {
+    line-height: 1.4;
+  }
+  .cardBoxVisible{
+    display: none;
+  }
+}
+@media (max-width: 576px) {
+  .cardSmallDevice {
+    display: none;
+  }
+  .cardBoxVisible{
+    display: block;
+  }
+}

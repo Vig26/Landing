@@ -1,0 +1,17 @@
+.wrapper {
+  gap: 20px;
+}
+.wrapper label {
+  opacity: 0.6;
+}
+.entries > div {
+  border: none;
+  background-color: var(--inputBackground);
+  border-radius: 5px;
+  width: 70px;
+}
+.entries > div > div[class*="Indicator"] {
+  padding-right: 16px;
+}
+.entries > div > div[class*="Value"] {
+}

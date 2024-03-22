@@ -1,0 +1,86 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.75);
+  z-index: 100;
+}
+.wrapper {
+  position: fixed;
+  width: 400px;
+  height: 100vh;
+  max-height: 100vh;
+  overflow-y: auto;
+  background-color: var(--secondary);
+  z-index: 101;
+  animation: slide-right 300ms ease-out forwards;
+  font-family: var(--primary-font);
+}
+.wrapper::-webkit-scrollbar {
+  display: none;
+}
+.sideBarWrapper,
+.infoWrapper {
+  padding-top: 32px;
+}
+.sideBarWrapper button {
+  top: 15px;
+  right: 20px;
+}
+.sideBarWrapper button svg {
+  width: 24px;
+  height: 24px;
+}
+.divider {
+  height: 1px;
+  background-color: var(--primary);
+  opacity: 0.5;
+}
+
+@keyframes slide-right {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .sideBarWrapper,
+  .infoWrapper {
+    padding-top: 24px;
+  }
+  .sideBarWrapper button {
+    top: 12px;
+  }
+  .sideBarWrapper button svg {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .wrapper {
+    width: 350px;
+  }
+  .sideBarWrapper {
+    padding: 30px 0 0;
+  }
+  .sideBarWrapper button svg {
+    width: 20px;
+    height: 20px;
+  }
+  .sideBarWrapper button {
+    top: 10px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .wrapper {
+    width: 100%;
+  }
+}

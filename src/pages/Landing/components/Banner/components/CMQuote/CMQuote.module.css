@@ -1,0 +1,32 @@
+.wrapper img {
+  max-width: 350px;
+}
+.quoteBox {
+  font-family: var(--primary-font);
+}
+.quoteHeading {
+  font-size: 22px;
+}
+@media screen and (max-width: 1400px) {
+  .quoteHeading {
+    font-size: 20px;
+  }
+  .wrapper img {
+    object-fit: contain;
+    max-width: -webkit-fill-available;
+    transform: scale(1.6);
+  }
+}
+@media screen and (max-width: 1024px) {
+}
+@media screen and (max-width: 767px) {
+  .quote {
+    line-height: 1.5;
+  }
+  .quoteHeading {
+    font-size: 16px;
+  }
+  .wrapper img {
+    transform: scale(1);
+  }
+}

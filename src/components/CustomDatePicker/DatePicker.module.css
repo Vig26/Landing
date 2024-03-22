@@ -1,0 +1,32 @@
+.dateWrapper {
+  padding: 6px 20px;
+  border: none;
+  outline: 0;
+  background-color: var(--inputBackground);
+  border-radius: 5px;
+  font-size: 16px;
+}
+.dateWrapper:focus-visible {
+  border: none;
+}
+.dateWrapper::-webkit-calendar-picker-indicator {
+  background: url("../../assets/images/svg/calendar.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.clearBtn {
+  background-color: #ddd;
+  font-size: 14px;
+  border-radius: 4px;
+}
+@media screen and (max-width: 1400px) {
+  .dateWrapper {
+    padding: 6px 15px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .dateWrapper {
+    padding: 5px 15px;
+    width: 100%;
+  }
+}

@@ -1,0 +1,40 @@
+.helpWrapper {
+  padding-block: 24px;
+  background-color: #f9f9f9;
+}
+.helpWrapper .heading {
+  color: #bbb9b9;
+  font-size: 22px;
+}
+.helpCard {
+  gap: 35px;
+}
+.helpCard .imageWrapper img {
+  max-width: 94px;
+}
+.helpDesc {
+  color: #7f8082;
+  opacity: 0.7;
+  line-height: 1.5;
+}
+.viewMore {
+  color: #a3c325;
+  font-weight: 500;
+}
+@media screen and (max-width: 1400px) {
+  .helpWrapper .heading {
+    font-size: 20px;
+  }
+  .helpCard {
+    gap: 24px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .helpWrapper .heading {
+    font-size: 18px;
+  }
+  .helpCard:first-of-type {
+    margin-bottom: 16px;
+  }
+}

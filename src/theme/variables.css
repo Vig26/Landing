@@ -1,0 +1,16 @@
+:root {
+  --primary: #0584f2;
+  --primary-dark: #004b81;
+  --secondary: #0a1427;
+  --footer: #374e62;
+  --black: #000000;
+  --white: #ffffff;
+  --whiteBtnForeground: #004fac;
+  --blueShade500: #8ea5b9;
+  --blueShade500Light: #8ea5b921;
+  --primary-font: "Poppins";
+  --secondary-font: "Raleway";
+  --avenir-font: "Avenir Next LT Pro";
+  --inputBackground: #f8fbfd;
+  --landing-primary: #2578c3;
+}

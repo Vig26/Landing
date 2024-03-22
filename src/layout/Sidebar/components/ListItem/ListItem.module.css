@@ -1,0 +1,19 @@
+.navigation {
+  font-size: 18px;
+  transition: color 0.3s ease;
+  color: var(--white);
+}
+.navigation:hover {
+  color: var(--primary);
+}
+@media screen and (max-width: 1400px) {
+  .navigation {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .navigation {
+    padding-block: 5px;
+  }
+}

@@ -1,0 +1,37 @@
+.headerWrapper tr th {
+  font-weight: 500;
+  max-width: 218px;
+  background-color: var(--primary);
+  color: var(--white);
+  vertical-align: middle !important;
+  height: 100px;
+  padding-inline: 20px;
+  border-bottom: none;
+}
+.headerWrapper th:first-of-type {
+  border-radius: 10px 0 0 10px;
+  padding-left: 32px;
+}
+.headerWrapper th:last-of-type {
+  border-radius: 0 10px 10px 0;
+  padding-right: 32px;
+}
+@media screen and (max-width: 1600px) {
+  .headerWrapper tr th {
+    height: 90px;
+    padding-inline: 18px;
+  }
+  .headerWrapper th:first-of-type {
+    padding-left: 24px;
+  }
+  .headerWrapper th:last-of-type {
+    padding-right: 24px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .headerWrapper tr th {
+    height: 70px;
+    padding-inline: 14px;
+    line-height: 1.5;
+  }
+}

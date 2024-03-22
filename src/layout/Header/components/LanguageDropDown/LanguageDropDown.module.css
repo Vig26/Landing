@@ -1,0 +1,53 @@
+.languageWrapper {
+  gap: 15px;
+  position: relative;
+}
+.selectWrapper {
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding-right: 20px;
+  background-image: url("../../../../assets/images/svg/down-arrow-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center right;
+  font-weight: bold;
+}
+.selectWrapper:focus-visible {
+  outline: 0;
+}
+.languageWrapper::after {
+  position: absolute;
+  content: "";
+  right: -15px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 25px;
+  width: 1px;
+  background: rgba(0, 0, 0, 0.5);
+}
+@media screen and (max-width: 1600px) {
+  .languageWrapper svg {
+    width: 35px;
+    height: 35px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .languageWrapper svg {
+    width: 30px;
+    height: 30px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .languageWrapper svg {
+    width: 25px;
+  }
+  .languageWrapper {
+    gap: 10px;
+  }
+  .selectWrapper {
+    padding-right: 10px;
+  }
+  .languageWrapper::after {
+    display: none;
+  }
+}

@@ -1,0 +1,93 @@
+.header {
+  font-family: var(--primary-font);
+  background-color: var(--white);
+  box-shadow: 0px 3px 3.5px rgba(0, 0, 0, 0.16);
+  position: relative;
+  z-index: 99;
+  padding-block: 8px;
+}
+.header::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  background-color: var(--primary);
+  top: 0;
+  z-index: -1;
+  min-width: 25%;
+  clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
+}
+.imagesWrapper {
+  margin-left: 40px;
+  gap: 20px;
+}
+.imagesWrapper img,
+.logoRight {
+  object-fit: contain;
+}
+.rightHeader {
+  gap: 35px;
+}
+.menuIcon {
+  background: transparent;
+}
+.menuIcon svg {
+  height: 40px;
+  width: 40px;
+}
+@media screen and (max-width: 1600px) {
+  .imagesWrapper {
+    margin-left: 25px;
+  }
+  .imagesWrapper img,
+  .logoRight {
+    width: 65px;
+  }
+  .menuIcon svg {
+    width: 35px;
+    height: 35px;
+  }
+  .rightHeader {
+    gap: 25px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  /* .imagesWrapper {
+    margin-left: 25px;
+  } */
+  .imagesWrapper img,
+  .logoRight {
+    width: 60px;
+  }
+  .menuIcon svg {
+    width: 30px;
+    height: 30px;
+  }
+  /* .rightHeader {
+    gap: 25px;
+  } */
+}
+@media screen and (max-width: 1024px) {
+  .header::before {
+    min-width: 33%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .imagesWrapper img,
+  .logoRight {
+    width: 50px;
+  }
+  .header::before {
+    min-width: 40%;
+  }
+  .imagesWrapper {
+    margin-left: 15px;
+    gap: 15px;
+  }
+  .menuIcon svg {
+    width: 25px;
+    height: 25px;
+  }
+  .rightHeader {
+    gap: 15px;
+  }
+}

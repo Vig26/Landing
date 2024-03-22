@@ -1,0 +1,54 @@
+.wrapper {
+  display: block;
+  cursor: pointer;
+  padding-block: 5px;
+  text-align: left;
+  /* margin: 0; */
+}
+.wrapper input {
+  display: none;
+}
+.wrapper span {
+  line-height: 22px;
+  height: 22px;
+  padding-left: 22px;
+  display: block;
+  position: relative;
+}
+.wrapper span:not(:empty) {
+  padding-left: 50px;
+}
+.wrapper span::before,
+.wrapper span::after {
+  content: "";
+  width: 22px;
+  height: 22px;
+  display: block;
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+  position: absolute;
+}
+.wrapper span::before {
+  border: 1px solid var(--primary);
+  transition: background 0.2s ease,
+    transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 2);
+}
+.wrapper span::after {
+  background: var(--white);
+  transform: scale(0.78);
+  transition: transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.4);
+}
+.wrapper input:checked + span::before {
+  transform: scale(1.04);
+  background: var(--primary);
+}
+.wrapper input:checked + span::after {
+  transform: scale(0.5);
+  transition: transform 0.3s ease;
+}
+@media screen and (max-width: 767px) {
+  .wrapper span:not(:empty) {
+    padding-left: 35px;
+  }
+}

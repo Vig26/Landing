@@ -1,0 +1,55 @@
+.wrapper {
+  background-color: var(--white);
+  width: 35%;
+  margin-inline: auto;
+  border-radius: 10px;
+  padding: 40px 25px;
+}
+.iconBtn {
+  top: 15px;
+  right: 25px;
+}
+.wrapper h3 {
+  color: var(--primary);
+  padding-inline: 25px;
+}
+.actions {
+  gap: 40px;
+}
+.btn {
+  padding: 5px 20px;
+  border-radius: 5px;
+}
+.okay {
+  background-color: var(--primary);
+  color: var(--white);
+}
+.cancel {
+  background-color: #ddd;
+}
+@media screen and (max-width: 1400px) {
+  .wrapper {
+    padding-top: 25px;
+    padding-bottom: 15px;
+  }
+  .wrapper h3 {
+    color: var(--primary);
+    font-size: 20px;
+  }
+  .wrapper p {
+    font-size: 16px;
+  }
+  .wrapper .iconBtn {
+    top: 6px;
+    right: 8px;
+    transform: scale(0.6);
+  }
+  .wrapper hr {
+    margin-block: 10px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .wrapper {
+    width: 100%;
+  }
+}

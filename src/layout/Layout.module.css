@@ -1,0 +1,24 @@
+.mainWrapper {
+  min-height: 100vh;
+}
+.wrapper {
+  padding-top: 104px;
+  display: flex;
+  flex-flow: column;
+  flex: 1 1 auto;
+}
+@media screen and (max-width: 1600px) {
+  .wrapper {
+    padding-top: 88px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .wrapper {
+    padding-top: 82px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .wrapper {
+    padding-top: 72px;
+  }
+}

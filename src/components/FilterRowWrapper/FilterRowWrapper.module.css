@@ -1,0 +1,74 @@
+.wrapper {
+  padding-bottom: 50px;
+}
+.filterLeft {
+  flex: 0 0 40%;
+}
+.filterRight {
+  flex: 0 0 60%;
+}
+.filterLeft label {
+  margin-right: 25px;
+  font-weight: 600;
+}
+.searchWrapper {
+  padding: 10px 20px;
+  border: none;
+  outline: 0;
+  background-color: var(--inputBackground);
+  border-radius: 5px;
+  border: 1px solid transparent;
+  width: 100%;
+  position: relative;
+}
+.searchWrapper + span {
+  top: 50%;
+  transform: translateY(-50%);
+  right: 15px;
+  background-color: var(--inputBackground);
+}
+
+.searchWrapper:focus {
+  border: 1px solid var(--primary);
+}
+@media screen and (max-width: 1600px) {
+  .wrapper {
+    padding-bottom: 20px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .filterLeft label {
+    margin-right: 12px;
+  }
+  .searchBoxWrapper ::placeholder {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .filterLeft,
+  .filterRight {
+    flex: 0 0 50%;
+    width: 50%;
+  }
+  .filterLeft label {
+    margin-right: 8px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .wrapper {
+    flex-wrap: wrap;
+    padding-bottom: 16px;
+  }
+  .filterRight,
+  .filterLeft {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+  .filterLeft label {
+    margin-right: 0px;
+    width: 100%;
+  }
+  .filterRight > div {
+    width: auto !important;
+  }
+}

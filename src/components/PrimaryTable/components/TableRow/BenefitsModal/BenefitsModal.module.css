@@ -1,0 +1,47 @@
+.wrapper {
+  padding: 15px 30px;
+  border-radius: 10px;
+  overflow: auto;
+}
+.nestedTableWrapper {
+  border-collapse: collapse;
+  overflow: auto;
+  width: 100%;
+}
+.nestedTableWrapper tr th,
+.nestedTableWrapper tr td {
+  text-align: left;
+  padding: 8px;
+  border: 1px solid #ddd;
+}
+.nestedTableWrapper thead .benefitHeader th {
+  font-weight: 500;
+  color: var(--primary);
+  text-align: left;
+}
+.wrapper::-webkit-scrollbar {
+  width: 5px;
+}
+.wrapper::-webkit-scrollbar-track {
+  background: transparent;
+}
+.wrapper::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 15px;
+}
+.iconBtn {
+  top: 0;
+}
+@media screen and (max-width: 1600px) {
+  .wrapper {
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .wrapper {
+    max-height: 350px;
+  }
+  .nestedTableWrapper {
+    max-height: 350px;
+  }
+}

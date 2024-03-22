@@ -1,0 +1,36 @@
+.wrapper {
+  align-self: center;
+}
+.wrapper img {
+  margin-bottom: 32px;
+}
+@media screen and (max-width: 1600px) {
+  .wrapper img {
+    width: 140px;
+    height: 140px;
+  }
+  .wrapper img {
+    margin-bottom: 24px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .wrapper img {
+    width: 120px;
+    height: 120px;
+  }
+  .wrapper img {
+    margin-bottom: 16px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .wrapper img {
+    width: 120px;
+    height: 120px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .wrapper img {
+    width: 100px;
+    height: 100px;
+  }
+}

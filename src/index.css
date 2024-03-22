@@ -1,0 +1,39 @@
+@import url("./assets/fonts/poppins/styleSheet.css");
+@import url("./assets/fonts/raleway/styleSheet.css");
+@import url("./assets/fonts/avenir-next/styleSheet.css");
+@import url("./theme/variables.css");
+@import url("./theme/typography.css");
+@import url("./theme/utilities.css");
+body {
+  margin: 0;
+  padding: 0;
+}
+button {
+  transition: all 0.2s ease-in;
+}
+button:disabled {
+  background-color: #cccccc;
+  color: #666666;
+  pointer-events: none;
+}
+.spinner-loader {
+  width: 50px;
+  height: 50px;
+}
+.react-datepicker-wrapper {
+  width: 80%;
+}
+select option {
+  white-space: normal;
+}
+@media screen and (min-width: 1600px) {
+  .container {
+    max-width: 1700px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .spinner-loader {
+    width: 40px;
+    height: 40px;
+  }
+}
